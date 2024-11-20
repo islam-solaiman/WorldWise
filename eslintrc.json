@@ -1,9 +1,23 @@
 {
-  "extends": "react-app",
   "rules": {
     "no-unused-vars": [
-      "off",
-      { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "caughtErrors": "all",
+        "ignoreRestSiblings": false,
+        "reportUsedIgnorePattern": false
+      }
     ]
   }
 }
+// {
+//   "extends": "react-app",
+//   "rules": {
+//     "no-unused-vars": [
+//       "off",
+//       { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }
+//     ]
+//   }
+// }
